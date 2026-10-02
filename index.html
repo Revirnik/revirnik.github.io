@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="cs">
+<html lang="cs" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -23,7 +23,6 @@
 :root{color-scheme:light}
 html,body{margin:0}
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme: dark){:root{color-scheme:dark}}
 [hidden]{display:none!important}
 /* Layout: one narrow phone-first column, a river-coloured masthead, then three steps (voda → poloha → revíry) and a detail sheet. */
 :root{
@@ -196,7 +195,6 @@ ul.plain li{margin:3px 0}
 /* --- web verze --- */
 #map{display:block;width:100%;height:380px;z-index:0}
 .leaflet-container{font-family:var(--f-body);background:var(--sunk)}
-@media (prefers-color-scheme: dark){ .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.88) saturate(.7)} }
 .pin{width:26px;height:34px;margin-left:-13px;margin-top:-34px}
 .numpin{display:grid;place-items:center;width:28px;height:28px;margin-left:-14px;margin-top:-14px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font:800 15px var(--f-display);border:2px solid var(--surface);box-shadow:0 1px 4px rgba(0,0,0,.35)}
 .leaflet-tooltip{font-family:var(--f-body);font-weight:700}

@@ -2,13 +2,29 @@
 
 export const UA = "Pstruh/1.0 (+https://pstruhapp.github.io; ranni aktualizace)";
 
+// RIS občas vrací čísla typu "-.5" nebo "-NaN" – opravíme je, než to vzdáme.
+export function parseLoose(t) {
+  try { return JSON.parse(t); } catch (e) {
+    const fixed = t
+      .replace(/([\[,:]\s*)-\./g, (_, a) => a + "-0.")
+      .replace(/([\[,:]\s*)\./g, (_, a) => a + "0.")
+      .replace(/([\[,:]\s*)-?(NaN|Infinity)\b/g, "$1null");
+    try { return JSON.parse(fixed); } catch {
+      const m = /position (\d+)/.exec(e.message);
+      const at = m ? +m[1] : 0;
+      throw new Error(e.message + " | okolí: " + JSON.stringify(t.slice(Math.max(0, at - 60), at + 60)));
+    }
+  }
+}
+
 export async function get(url, { json = false, tries = 3 } = {}) {
   let last;
   for (let i = 0; i < tries; i++) {
     try {
       const r = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "cs" } });
       if (!r.ok) throw new Error(`HTTP ${r.status} ${url}`);
-      return json ? await r.json() : await r.text();
+      const t = await r.text();
+      return json ? parseLoose(t) : t;
     } catch (e) {
       last = e;
       await sleep(1500 * (i + 1));

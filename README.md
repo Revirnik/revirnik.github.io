@@ -1,1 +1,19 @@
-# revirnik.github.io
+# Revírník
+
+Webová aplikace pro rybáře: nejbližší rybářské revíry ČRS podle polohy, podmínky lovu z RIS Portálu,
+průtoky pstruhových toků z ČHMÚ, zarybnění a pstruhové aktuality.
+
+**Stránka:** https://revirnik.github.io
+
+## Jak to funguje
+- `index.html` – celá aplikace (mapa OpenStreetMap přes Leaflet).
+- `data/` – data, která každé ráno obnoví GitHub Actions (`.github/workflows/update.yml` → `scripts/update.mjs`).
+- Ruční spuštění aktualizace: záložka **Actions** → *Ranní aktualizace dat* → **Run workflow**.
+
+## Zdroje dat
+- Revíry a podmínky lovu: [RIS Portál ČRS](https://ris.rybsvaz.cz)
+- Průtoky: [ČHMÚ – hlásné profily](https://hydro.chmi.cz/hppsoldv/hpps_oplist.php)
+- Zarybnění: týdenní zprávy [Východočeského ÚS ČRS](https://vcus.rybsvaz.cz/aktuality)
+- Mapa: © přispěvatelé [OpenStreetMap](https://www.openstreetmap.org/copyright)
+
+Údaje jsou orientační. Závazné jsou podmínky na kartě revíru v RIS a bližší podmínky výkonu rybářského práva.

@@ -152,7 +152,7 @@ async function aktuality() {
 async function zarybneni() {
   const VC = "https://vcus.rybsvaz.cz";
   const prev = await readJSON("zarybneni.json", { zaznamy: [] });
-  const done = new Set(prev.zaznamy.map((z) => z.url));
+  const done = new Set([...prev.zaznamy.map((z) => z.url), ...(prev.zpracovane || [])]);
   const cards = [];
   for (let p = 1; p <= 2; p++) cards.push(...parseCards(await get(`${VC}/aktuality?category=&page=${p}&pageSize=9`), VC));
   const nove = cards.filter((c) => /vysazov/i.test(c.titul) && c.datum && !done.has(c.url));
@@ -169,7 +169,8 @@ async function zarybneni() {
   const limit = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10);
   const zaznamy = [...prev.zaznamy, ...add].filter((z) => z.datum >= limit);
   const doDatum = zaznamy.reduce((m, z) => (z.datum > m ? z.datum : m), "");
-  await writeJSON("zarybneni.json", { ...prev, aktualizovano: now.iso, do: doDatum, zaznamy });
+  const zpracovane = [...new Set([...(prev.zpracovane || []), ...nove.map((c) => c.url)])].slice(-60);
+  await writeJSON("zarybneni.json", { ...prev, aktualizovano: now.iso, do: doDatum, zpracovane, zaznamy });
   return { novych: add.length, celkem: zaznamy.length };
 }
 

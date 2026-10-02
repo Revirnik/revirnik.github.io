@@ -332,10 +332,14 @@ ul.plain li{margin:3px 0}
   </div>
   <div class="panel" id="donatePanel" hidden>
     <h3>Podpořte Pstruha</h3>
-    <p>Pstruh je zdarma a bez reklam. Pokud vám pomohl najít vodu, můžete přispět na provoz a další vývoj. Naskenujte QR kód v bankovní aplikaci.</p>
+    <p>Pstruh je zdarma a bez reklam. Pokud vám pomohl najít vodu, můžete přispět na provoz a další vývoj.</p>
     <div class="chips" id="donateAmt"></div>
-    <div class="qr" id="donateQr"></div>
-    <p>Účet: <span class="acct" id="donateAcct"></span><br>Zpráva pro příjemce: Pstruh</p>
+    <p id="donateCardRow" hidden><a class="btn primary" id="donateCard" href="#" target="_blank" rel="noopener">Zaplatit kartou / Apple Pay</a></p>
+    <div id="donateBank" hidden>
+      <p>Nebo naskenujte QR kód v bankovní aplikaci:</p>
+      <div class="qr" id="donateQr"></div>
+      <p>Účet: <span class="acct" id="donateAcct"></span><br>Zpráva pro příjemce: Pstruh</p>
+    </div>
     <p>Děkujeme! 🎣</p>
   </div>
   <div class="panel" id="contactPanel" hidden>
@@ -659,16 +663,20 @@ const CFG={
   email:"",          // kontaktní e-mail pro „Napište nám“
   iban:"",           // IBAN pro QR platbu (např. CZ65 0800 0000 1920 0014 5399)
   ucet:"",           // číslo účtu k zobrazení (např. 19-2000145399/0800)
-  castky:[20,40,60]
+  castky:[20,40,60],
+  stripe:{20:"",40:"",60:""}  // Stripe Payment Links pro jednotlivé částky (karta, Apple Pay, Google Pay)
 };
 const toggle=(id)=>{ const el=$(id), open=el.hidden; ["donatePanel","contactPanel"].forEach(x=>$(x).hidden=true); el.hidden=!open;
   if(open) el.scrollIntoView({behavior:"smooth",block:"nearest"}); };
-if(CFG.iban){
-  const iban=CFG.iban.replace(/\s+/g,"").toUpperCase(); let amt=CFG.castky[1]||CFG.castky[0];
-  $("donateBtn").hidden=false; $("donateAcct").textContent=CFG.ucet||CFG.iban;
+const hasStripe=Object.values(CFG.stripe||{}).some(Boolean);
+if(CFG.iban||hasStripe){
+  const iban=(CFG.iban||"").replace(/\s+/g,"").toUpperCase(); let amt=CFG.castky[1]||CFG.castky[0];
+  $("donateBtn").hidden=false; $("donateAcct").textContent=CFG.ucet||CFG.iban; $("donateBank").hidden=!iban;
   const draw=async()=>{
     $("donateAmt").innerHTML=CFG.castky.map(a=>`<button class="chip" aria-pressed="${a===amt}" data-a="${a}">${a} Kč</button>`).join("");
     $("donateAmt").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{amt=+b.dataset.a;draw();});
+    const link=CFG.stripe?.[amt]; $("donateCardRow").hidden=!link; if(link) $("donateCard").href=link;
+    if(!iban) return;
     if(!window.qrcode) await new Promise((ok,ko)=>{const s=document.createElement("script");
       s.src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js";s.onload=ok;s.onerror=ko;document.head.appendChild(s);});
     const q=qrcode(0,"M"); q.addData(`SPD*1.0*ACC:${iban}*AM:${amt.toFixed(2)}*CC:CZK*MSG:PSTRUH`); q.make();

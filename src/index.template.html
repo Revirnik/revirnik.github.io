@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Revírník</title>
+<title>Pstruh</title>
 <meta name="description" content="Nejbližší rybářské revíry v Česku podle polohy, podmínky lovu z RIS, průtoky řek a zarybnění.">
 <meta name="theme-color" content="#0B3B3A">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Revírník">
+<meta name="apple-mobile-web-app-title" content="Pstruh">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<meta property="og:title" content="Revírník">
+<meta property="og:title" content="Pstruh">
 <meta property="og:description" content="Nejbližší rybářské revíry, podmínky lovu, průtoky a zarybnění.">
 <meta property="og:image" content="icons/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,7 @@ html,body{margin:0}
     <div class="mast-row">
       <div class="badge" aria-hidden="true"><svg width="42" height="26" viewBox="0 0 84 52" style="color:var(--head-ink)"><use href="#trout"/></svg></div>
       <div>
-        <h1>Revírník</h1>
+        <h1>Pstruh</h1>
         <p>Rybářské revíry v Česku, podmínky lovu, průtoky a zarybnění</p>
       </div>
     </div>
@@ -151,14 +151,14 @@ html,body{margin:0}
 
   <div id="detail"></div>
 
-  <div class="sharebar"><button class="btn" id="shareBtn">Poslat Revírník kamarádovi</button></div>
+  <div class="sharebar"><button class="btn" id="shareBtn">Poslat Pstruha kamarádovi</button></div>
   <p class="foot" id="foot">Revíry a podmínky lovu z RIS Portálu ČRS, průtoky z ČHMÚ, mapa © přispěvatelé OpenStreetMap. Data se obnovují každé ráno. Před lovem si vždy ověř aktuální podmínky na kartě revíru v RIS. Revíry Moravského rybářského svazu zatím nejsou zahrnuty.</p>
 </div>
 
 <script>
 (() => {
 "use strict";
-const DATA_BASES=["https://raw.githubusercontent.com/Revirnik/revirnik.github.io/main/data/","data/"];
+const DATA_BASES=["data/"];
 const TOWNS={{TOWNS}};
 const MO_LOC={"ÚN Rozkoš":[16.07,50.37],"ÚN Pastviny":[16.57,50.09],"Smiřice":[15.865,50.30],"Holice":[15.986,50.066],"Moravany":[15.94,50.00],"Chroustovice":[15.99,49.95],"Červený Kostelec":[16.09,50.476],"Košťálov":[15.40,50.57],"Libáň":[15.217,50.375],"Ronov nad Doubravou":[15.58,49.89],"Přelouč":[15.56,50.04],"Borohrádek":[16.09,50.10],"Týniště nad Orlicí":[16.08,50.15],"Třebechovice":[15.99,50.20],"Starý Ples":[15.88,50.36],"Česká Skalice":[16.04,50.39],"Havlovice":[16.01,50.48],"Jaroměř":[15.92,50.356],"Hradec Králové":[15.83,50.21],"Pardubice":[15.78,50.04]};
 const SVN={"JČ":"ČRS Jihočeský ÚS","MS":"ČRS Moravskoslezský ÚS","SČ":"ČRS Severočeský ÚS","STČ":"ČRS Středočeský ÚS","VČ":"ČRS Východočeský ÚS","ZČ":"ČRS Západočeský ÚS","PHA":"ČRS ÚS města Prahy","":"ČRS"};
@@ -187,9 +187,9 @@ async function getData(f){ if(cache[f]) return cache[f];
 
 /* ---------- stav ---------- */
 const S={typ:"P",mode:"gps",loc:null,results:null,sel:null};
-const saved=store.get("revirnik");
+const saved=store.get("pstruh");
 if(saved){ if(saved.typ) S.typ=saved.typ; if(saved.mode) S.mode=saved.mode; if(saved.loc&&inCZ(saved.loc.lat,saved.loc.lon)) S.loc=saved.loc; }
-const persist=()=>store.set("revirnik",{typ:S.typ,mode:S.mode,loc:S.loc});
+const persist=()=>store.set("pstruh",{typ:S.typ,mode:S.mode,loc:S.loc});
 
 /* ---------- revíry ---------- */
 const RIS={all:null};
@@ -242,7 +242,7 @@ $("mG").onclick=()=>{S.mode="gps";renderToggles();persist();};
 $("mL").onclick=()=>{S.mode="misto";renderToggles();persist();$("place").focus();};
 
 function setLoc(lat,lon,label,source,zoom=true){
-  if(!inCZ(lat,lon)){msg(source==="gps"?"gpsMsg":"placeMsg","Bod leží mimo Česko. Revírník hledá jen v ČR.",true);return;}
+  if(!inCZ(lat,lon)){msg(source==="gps"?"gpsMsg":"placeMsg","Bod leží mimo Česko. Pstruh hledá jen v ČR.",true);return;}
   const nt=nearestTown(lat,lon);
   S.loc={lat,lon,label:label||(nt.km<3?nt.name:`${fmtKm(nt.km)} km od: ${nt.name}`),source};
   resetResults();persist();renderLoc();drawLoc();
@@ -463,7 +463,7 @@ function renderNews(d){ const out=$("out");
 
 /* ---------- sdílení ---------- */
 $("shareBtn").onclick=async()=>{ const url=location.origin+location.pathname;
-  try{ if(navigator.share){ await navigator.share({title:"Revírník",text:"Nejbližší rybářské revíry, podmínky lovu, průtoky a zarybnění",url}); return; } }catch(e){ if(e.name==="AbortError") return; }
+  try{ if(navigator.share){ await navigator.share({title:"Pstruh",text:"Nejbližší rybářské revíry, podmínky lovu, průtoky a zarybnění",url}); return; } }catch(e){ if(e.name==="AbortError") return; }
   try{ await navigator.clipboard.writeText(url); $("shareBtn").textContent="Odkaz zkopírován"; }catch{ prompt("Zkopíruj odkaz:",url); } };
 
 /* ---------- start ---------- */

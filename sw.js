@@ -1,5 +1,5 @@
-// Revírník: jednoduchá offline záloha. Vždy zkouší síť, při výpadku použije poslední uloženou verzi.
-const CACHE = "revirnik-v1";
+// Pstruh: jednoduchá offline záloha. Vždy zkouší síť, při výpadku použije poslední uloženou verzi.
+const CACHE = "pstruh-v1";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener("fetch", (e) => {

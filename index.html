@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Revírník</title>
+<title>Pstruh</title>
 <meta name="description" content="Nejbližší rybářské revíry v Česku podle polohy, podmínky lovu z RIS, průtoky řek a zarybnění.">
 <meta name="theme-color" content="#0B3B3A">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Revírník">
+<meta name="apple-mobile-web-app-title" content="Pstruh">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<meta property="og:title" content="Revírník">
+<meta property="og:title" content="Pstruh">
 <meta property="og:description" content="Nejbližší rybářské revíry, podmínky lovu, průtoky a zarybnění.">
 <meta property="og:image" content="icons/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -229,7 +229,7 @@ ul.plain li{margin:3px 0}
     <div class="mast-row">
       <div class="badge" aria-hidden="true"><svg width="42" height="26" viewBox="0 0 84 52" style="color:var(--head-ink)"><use href="#trout"/></svg></div>
       <div>
-        <h1>Revírník</h1>
+        <h1>Pstruh</h1>
         <p>Rybářské revíry v Česku, podmínky lovu, průtoky a zarybnění</p>
       </div>
     </div>
@@ -318,14 +318,14 @@ ul.plain li{margin:3px 0}
 
   <div id="detail"></div>
 
-  <div class="sharebar"><button class="btn" id="shareBtn">Poslat Revírník kamarádovi</button></div>
+  <div class="sharebar"><button class="btn" id="shareBtn">Poslat Pstruha kamarádovi</button></div>
   <p class="foot" id="foot">Revíry a podmínky lovu z RIS Portálu ČRS, průtoky z ČHMÚ, mapa © přispěvatelé OpenStreetMap. Data se obnovují každé ráno. Před lovem si vždy ověř aktuální podmínky na kartě revíru v RIS. Revíry Moravského rybářského svazu zatím nejsou zahrnuty.</p>
 </div>
 
 <script>
 (() => {
 "use strict";
-const DATA_BASES=["https://raw.githubusercontent.com/Revirnik/revirnik.github.io/main/data/","data/"];
+const DATA_BASES=["data/"];
 const TOWNS=[["Praha",50.08,14.42,1],["Brno",49.19,16.61,1],["Ostrava",49.83,18.29,1],["Plzeň",49.74,13.38,1],["Liberec",50.77,15.06,1],["Olomouc",49.59,17.25,1],["České Budějovice",48.97,14.47,1],["Hradec Králové",50.21,15.83,1],["Ústí nad Labem",50.66,14.03,1],["Pardubice",50.04,15.78,1],["Zlín",49.23,17.67,1],["Karlovy Vary",50.23,12.87,1],["Jihlava",49.40,15.59,1],["Havířov",49.78,18.43,2],["Kladno",50.15,14.10,2],["Most",50.50,13.64,2],["Opava",49.94,17.90,2],["Frýdek-Místek",49.68,18.35,2],["Karviná",49.85,18.54,2],["Teplice",50.64,13.82,2],["Děčín",50.78,14.21,2],["Chomutov",50.46,13.42,2],["Jablonec nad Nisou",50.72,15.17,2],["Mladá Boleslav",50.41,14.90,2],["Prostějov",49.47,17.11,2],["Přerov",49.46,17.45,2],["Třebíč",49.21,15.88,2],["Česká Lípa",50.69,14.54,2],["Tábor",49.41,14.66,2],["Znojmo",48.86,16.05,2],["Příbram",49.69,14.01,2],["Cheb",50.08,12.37,2],["Trutnov",50.56,15.91,2],["Kolín",50.03,15.20,2],["Písek",49.31,14.15,2],["Kroměříž",49.30,17.39,2],["Šumperk",49.97,16.97,2],["Vsetín",49.34,17.99,2],["Valašské Meziříčí",49.47,17.97,2],["Litoměřice",50.53,14.13,2],["Uherské Hradiště",49.07,17.46,2],["Hodonín",48.85,17.13,2],["Břeclav",48.76,16.88,2],["Český Krumlov",48.81,14.32,2],["Strakonice",49.26,13.90,2],["Klatovy",49.40,13.30,2],["Sokolov",50.18,12.64,2],["Beroun",49.96,14.07,2],["Kutná Hora",49.95,15.27,2],["Havlíčkův Brod",49.61,15.58,2],["Žďár nad Sázavou",49.56,15.94,2],["Náchod",50.42,16.16,2],["Jindřichův Hradec",49.14,15.00,2],["Benešov",49.78,14.69,2],["Rakovník",50.10,13.73,2],["Louny",50.36,13.80,2],["Žatec",50.33,13.55,2],["Semily",50.60,15.33,2],["Turnov",50.59,15.16,2],["Jičín",50.44,15.35,2],["Vrchlabí",50.63,15.61,2],["Krnov",50.09,17.70,2],["Bruntál",49.99,17.46,2],["Jeseník",50.23,17.20,2],["Ústí nad Orlicí",49.97,16.39,2],["Svitavy",49.76,16.47,2],["Blansko",49.36,16.64,2],["Vyškov",49.28,17.00,2],["Pelhřimov",49.43,15.22,2],["Prachatice",49.01,14.00,2],["Sušice",49.23,13.52,2],["Domažlice",49.44,12.93,2],["Tachov",49.80,12.63,2],["Rokycany",49.74,13.59,2],["Mělník",50.35,14.47,2],["Nymburk",50.19,15.04,2],["Rychnov nad Kněžnou",50.16,16.27,2],["Vyšší Brod",48.62,14.31,3],["Lipno nad Vltavou",48.64,14.22,3],["Kamenice nad Lipou",49.30,15.08,3],["Sázava",49.87,14.90,3],["Zruč nad Sázavou",49.74,15.11,3],["Ledeč nad Sázavou",49.69,15.28,3],["Světlá nad Sázavou",49.67,15.40,3],["Hřensko",50.87,14.24,3],["Frymburk",48.66,14.17,3],["Rožmberk nad Vltavou",48.65,14.37,3],["Kašperské Hory",49.14,13.56,3],["Železná Ruda",49.14,13.23,3],["Harrachov",50.77,15.43,3],["Špindlerův Mlýn",50.73,15.61,3],["Rožnov pod Radhoštěm",49.46,18.14,3],["Frenštát pod Radhoštěm",49.55,18.21,3],["Frýdlant nad Ostravicí",49.59,18.36,3],["Hranice",49.55,17.73,3],["Tišnov",49.35,16.42,3],["Bystřice nad Pernštejnem",49.52,16.26,3],["Vranov nad Dyjí",48.89,15.81,3],["Kraslice",50.32,12.52,3],["Nejdek",50.32,12.73,3],["Loket",50.19,12.75,3],["Kadaň",50.38,13.27,3],["Telč",49.18,15.45,3],["Slavonice",49.00,15.35,3],["Nové Hrady",48.79,14.78,3],["Třeboň",49.00,14.77,3],["Veselí nad Lužnicí",49.18,14.70,3],["Týn nad Vltavou",49.22,14.42,3],["Orlík nad Vltavou",49.51,14.17,3],["Davle",49.89,14.40,3],["Lenora",48.93,13.79,3],["Vimperk",49.05,13.78,3],["Bělá pod Pradědem",50.17,17.20,3],["Hanušovice",50.07,16.94,3],["Králíky",50.08,16.76,3],["Broumov",50.59,16.33,3],["Kostelec nad Orlicí",50.12,16.21,3],["Žamberk",50.09,16.47,3],["Nové Město na Moravě",49.56,16.07,3],["Jablunkov",49.58,18.76,3],["Bílá",49.44,18.45,3],["Vizovice",49.22,17.85,3],["Luhačovice",49.10,17.76,3],["Mikulov",48.81,16.64,3]];
 const MO_LOC={"ÚN Rozkoš":[16.07,50.37],"ÚN Pastviny":[16.57,50.09],"Smiřice":[15.865,50.30],"Holice":[15.986,50.066],"Moravany":[15.94,50.00],"Chroustovice":[15.99,49.95],"Červený Kostelec":[16.09,50.476],"Košťálov":[15.40,50.57],"Libáň":[15.217,50.375],"Ronov nad Doubravou":[15.58,49.89],"Přelouč":[15.56,50.04],"Borohrádek":[16.09,50.10],"Týniště nad Orlicí":[16.08,50.15],"Třebechovice":[15.99,50.20],"Starý Ples":[15.88,50.36],"Česká Skalice":[16.04,50.39],"Havlovice":[16.01,50.48],"Jaroměř":[15.92,50.356],"Hradec Králové":[15.83,50.21],"Pardubice":[15.78,50.04]};
 const SVN={"JČ":"ČRS Jihočeský ÚS","MS":"ČRS Moravskoslezský ÚS","SČ":"ČRS Severočeský ÚS","STČ":"ČRS Středočeský ÚS","VČ":"ČRS Východočeský ÚS","ZČ":"ČRS Západočeský ÚS","PHA":"ČRS ÚS města Prahy","":"ČRS"};
@@ -354,9 +354,9 @@ async function getData(f){ if(cache[f]) return cache[f];
 
 /* ---------- stav ---------- */
 const S={typ:"P",mode:"gps",loc:null,results:null,sel:null};
-const saved=store.get("revirnik");
+const saved=store.get("pstruh");
 if(saved){ if(saved.typ) S.typ=saved.typ; if(saved.mode) S.mode=saved.mode; if(saved.loc&&inCZ(saved.loc.lat,saved.loc.lon)) S.loc=saved.loc; }
-const persist=()=>store.set("revirnik",{typ:S.typ,mode:S.mode,loc:S.loc});
+const persist=()=>store.set("pstruh",{typ:S.typ,mode:S.mode,loc:S.loc});
 
 /* ---------- revíry ---------- */
 const RIS={all:null};
@@ -409,7 +409,7 @@ $("mG").onclick=()=>{S.mode="gps";renderToggles();persist();};
 $("mL").onclick=()=>{S.mode="misto";renderToggles();persist();$("place").focus();};
 
 function setLoc(lat,lon,label,source,zoom=true){
-  if(!inCZ(lat,lon)){msg(source==="gps"?"gpsMsg":"placeMsg","Bod leží mimo Česko. Revírník hledá jen v ČR.",true);return;}
+  if(!inCZ(lat,lon)){msg(source==="gps"?"gpsMsg":"placeMsg","Bod leží mimo Česko. Pstruh hledá jen v ČR.",true);return;}
   const nt=nearestTown(lat,lon);
   S.loc={lat,lon,label:label||(nt.km<3?nt.name:`${fmtKm(nt.km)} km od: ${nt.name}`),source};
   resetResults();persist();renderLoc();drawLoc();
@@ -630,7 +630,7 @@ function renderNews(d){ const out=$("out");
 
 /* ---------- sdílení ---------- */
 $("shareBtn").onclick=async()=>{ const url=location.origin+location.pathname;
-  try{ if(navigator.share){ await navigator.share({title:"Revírník",text:"Nejbližší rybářské revíry, podmínky lovu, průtoky a zarybnění",url}); return; } }catch(e){ if(e.name==="AbortError") return; }
+  try{ if(navigator.share){ await navigator.share({title:"Pstruh",text:"Nejbližší rybářské revíry, podmínky lovu, průtoky a zarybnění",url}); return; } }catch(e){ if(e.name==="AbortError") return; }
   try{ await navigator.clipboard.writeText(url); $("shareBtn").textContent="Odkaz zkopírován"; }catch{ prompt("Zkopíruj odkaz:",url); } };
 
 /* ---------- start ---------- */

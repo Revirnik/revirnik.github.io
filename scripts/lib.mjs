@@ -1,6 +1,6 @@
-// Pomocné funkce pro ranní aktualizaci dat Revírníku.
+// Pomocné funkce pro ranní aktualizaci dat aplikace Pstruh.
 
-export const UA = "Revirnik/1.0 (+https://revirnik.github.io; ranni aktualizace)";
+export const UA = "Pstruh/1.0 (+https://pstruhapp.github.io; ranni aktualizace)";
 
 export async function get(url, { json = false, tries = 3 } = {}) {
   let last;

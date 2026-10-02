@@ -1,4 +1,4 @@
-// Ranní aktualizace dat Revírníku. Spouští GitHub Actions (viz .github/workflows/update.yml).
+// Ranní aktualizace dat aplikace Pstruh. Spouští GitHub Actions (viz .github/workflows/update.yml).
 // Každý krok běží samostatně: když jeden zdroj selže, ostatní data se i tak obnoví.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";

@@ -1,12 +1,12 @@
 // Pstruh: jednoduchá offline záloha. Vždy zkouší síť, při výpadku použije poslední uloženou verzi.
-const CACHE = "pstruh-v2";
+const CACHE = "pstruh-v3";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const u = new URL(req.url);
-  if (/tile\.openstreetmap\.org|nominatim/.test(u.hostname)) return;
+  if (/tile\.openstreetmap\.org|nominatim|goatcounter|zgo\.at/.test(u.hostname)) return;
   e.respondWith(
     fetch(req).then((res) => {
       if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(req, copy)); }

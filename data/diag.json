@@ -1,0 +1,1447 @@
+{
+ "cas": "2026-10-03T17:30:05.772Z",
+ "bboxKeys": [
+  "items"
+ ],
+ "bboxCount": 156,
+ "bboxMeta": {},
+ "list": {
+  "keys": [
+   "from",
+   "size",
+   "items"
+  ],
+  "n": 10,
+  "meta": {
+   "from": 0,
+   "size": 10
+  },
+  "prvni": [
+   [
+    "471232",
+    "ADAMOV 1A",
+    "MIMOPSTRUHOVY",
+    false
+   ],
+   [
+    "433001",
+    "ANDĚLICE 1",
+    "PSTRUHOVY",
+    false
+   ]
+  ]
+ },
+ "list?page=2": {
+  "keys": [
+   "from",
+   "size",
+   "items"
+  ],
+  "n": 10,
+  "meta": {
+   "from": 0,
+   "size": 10
+  },
+  "prvni": [
+   [
+    "471232",
+    "ADAMOV 1A",
+    "MIMOPSTRUHOVY",
+    false
+   ],
+   [
+    "433001",
+    "ANDĚLICE 1",
+    "PSTRUHOVY",
+    false
+   ]
+  ]
+ },
+ "list?filter.cislo=433052": {
+  "keys": [
+   "from",
+   "size",
+   "items"
+  ],
+  "n": 10,
+  "meta": {
+   "from": 0,
+   "size": 10
+  },
+  "prvni": [
+   [
+    "471232",
+    "ADAMOV 1A",
+    "MIMOPSTRUHOVY",
+    false
+   ],
+   [
+    "433001",
+    "ANDĚLICE 1",
+    "PSTRUHOVY",
+    false
+   ]
+  ]
+ },
+ "list?filter.nazev=%C3%9AHLAVA": {
+  "keys": [
+   "from",
+   "size",
+   "items"
+  ],
+  "n": 10,
+  "meta": {
+   "from": 0,
+   "size": 10
+  },
+  "prvni": [
+   [
+    "471232",
+    "ADAMOV 1A",
+    "MIMOPSTRUHOVY",
+    false
+   ],
+   [
+    "433001",
+    "ANDĚLICE 1",
+    "PSTRUHOVY",
+    false
+   ]
+  ]
+ },
+ "list?search=%C3%9Ahlava": {
+  "keys": [
+   "from",
+   "size",
+   "items"
+  ],
+  "n": 10,
+  "meta": {
+   "from": 0,
+   "size": 10
+  },
+  "prvni": [
+   [
+    "471232",
+    "ADAMOV 1A",
+    "MIMOPSTRUHOVY",
+    false
+   ],
+   [
+    "433001",
+    "ANDĚLICE 1",
+    "PSTRUHOVY",
+    false
+   ]
+  ]
+ },
+ "list?pageSize=5": {
+  "keys": [
+   "from",
+   "size",
+   "items"
+  ],
+  "n": 10,
+  "meta": {
+   "from": 0,
+   "size": 10
+  },
+  "prvni": [
+   [
+    "471232",
+    "ADAMOV 1A",
+    "MIMOPSTRUHOVY",
+    false
+   ],
+   [
+    "433001",
+    "ANDĚLICE 1",
+    "PSTRUHOVY",
+    false
+   ]
+  ]
+ },
+ "chybejici": [
+  {
+   "c": "413045",
+   "n": "BEROUNKA 4 P",
+   "url": "413045-berounka-4-p",
+   "ok": true,
+   "cislo": "413045",
+   "typ": "PSTRUHOVY",
+   "sid": "4615323",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413010",
+   "n": "BEROUNKA 6 P",
+   "url": "413010-berounka-6-p",
+   "ok": true,
+   "cislo": "413010",
+   "typ": "PSTRUHOVY",
+   "sid": "4615325",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413028",
+   "n": "BLAŽEJOVICKÝ POTOK 1",
+   "url": "413028-blazejovicky-potok-1",
+   "ok": true,
+   "cislo": "413028",
+   "typ": "PSTRUHOVY",
+   "sid": "4615326",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "stavPrutokuOdkaz",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413005",
+   "n": "HODKOVSKÝ POTOK 1",
+   "url": "413005-hodkovsky-potok-1",
+   "ok": true,
+   "cislo": "413005",
+   "typ": "PSTRUHOVY",
+   "sid": "4615329",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413300",
+   "n": "JAVORNICE 3",
+   "url": "413300-javornice-3",
+   "ok": true,
+   "cislo": "413300",
+   "typ": "PSTRUHOVY",
+   "sid": "4615330",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "stavPrutokuOdkaz",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413017",
+   "n": "MLYNAŘICE 2",
+   "url": "413017-mlynarice-2",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/413017-mlynarice-2"
+  },
+  {
+   "c": "413023",
+   "n": "RAKOVNICKÝ POTOK 1 P (RYZAVÁ)",
+   "url": "413023-rakovnicky-potok-1-p-ryzava",
+   "ok": true,
+   "cislo": "413023",
+   "typ": "PSTRUHOVY",
+   "sid": "4615295",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413044",
+   "n": "SKALICE 5 P",
+   "url": "413044-skalice-5-p",
+   "ok": true,
+   "cislo": "413044",
+   "typ": "PSTRUHOVY",
+   "sid": "4615335",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413043",
+   "n": "VLKAVA 3",
+   "url": "413043-vlkava-3",
+   "ok": true,
+   "cislo": "413043",
+   "typ": "PSTRUHOVY",
+   "sid": "4615320",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "413035",
+   "n": "ZÁHOŘANSKÝ POTOK 1",
+   "url": "413035-zahoransky-potok-1",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/413035-zahoransky-potok-1"
+  },
+  {
+   "c": "413027",
+   "n": "Sázava 7 P",
+   "url": "413027-sazava-7-p",
+   "ok": true,
+   "cislo": "413027",
+   "typ": "PSTRUHOVY",
+   "sid": "4615429",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "423004",
+   "n": "BLANICE VODŇANSKÁ 5",
+   "url": "423004-blanice-vodnanska-5",
+   "ok": true,
+   "cislo": "423004",
+   "typ": "PSTRUHOVY",
+   "sid": "4615381",
+   "gps": [
+    "49.052765",
+    "13.988096"
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "gpsSouradniceDelka",
+    "gpsSouradniceSirka",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "423034",
+   "n": "PEKLOVSKÝ POTOK",
+   "url": "423034-peklovsky-potok",
+   "ok": true,
+   "cislo": "423034",
+   "typ": "PSTRUHOVY",
+   "sid": "4615382",
+   "gps": [
+    "49.191620",
+    "13.872623"
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "gpsSouradniceDelka",
+    "gpsSouradniceSirka",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "423500",
+   "n": "POHOŘSKÝ POTOK 1",
+   "url": "423500-pohorsky-potok-1",
+   "ok": true,
+   "cislo": "423500",
+   "typ": "PSTRUHOVY",
+   "sid": "4615386",
+   "gps": [
+    "48.713210",
+    "14.595174"
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "gpsSouradniceDelka",
+    "gpsSouradniceSirka",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "423005",
+   "n": "PSTRUHOVEC",
+   "url": "423005-pstruhovec",
+   "ok": true,
+   "cislo": "423005",
+   "typ": "PSTRUHOVY",
+   "sid": "4615385",
+   "gps": [
+    "49.009812",
+    "15.251618"
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "gpsSouradniceDelka",
+    "gpsSouradniceSirka",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "423065",
+   "n": "TRNÁVKA 2 P",
+   "url": "423065-trnavka-2-p",
+   "ok": true,
+   "cislo": "423065",
+   "typ": "PSTRUHOVY",
+   "sid": "4614936",
+   "gps": [
+    "49.495966",
+    "15.076641"
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "gpsSouradniceDelka",
+    "gpsSouradniceSirka",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433004",
+   "n": "BYSTŘICE 1",
+   "url": "433004-bystrice-1",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/433004-bystrice-1"
+  },
+  {
+   "c": "433007",
+   "n": "ČISTÁ (POTOK) 1",
+   "url": "433007-cista-potok-1",
+   "ok": true,
+   "cislo": "433007",
+   "typ": "PSTRUHOVY",
+   "sid": "4615290",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433009",
+   "n": "DRNOVÝ POTOK 1",
+   "url": "433009-drnovy-potok-1",
+   "ok": true,
+   "cislo": "433009",
+   "typ": "PSTRUHOVY",
+   "sid": "4615294",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433072",
+   "n": "KATEŘINSKÝ POTOK 1",
+   "url": "433072-katerinsky-potok-1",
+   "ok": true,
+   "cislo": "433072",
+   "typ": "PSTRUHOVY",
+   "sid": "4615296",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433018",
+   "n": "KOZÍ POTOK 1 A",
+   "url": "433018-kozi-potok-1-a",
+   "ok": true,
+   "cislo": "433018",
+   "typ": "PSTRUHOVY",
+   "sid": "4615955",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433019",
+   "n": "KRALOVICKÝ POTOK 1",
+   "url": "433019-kralovicky-potok-1",
+   "ok": true,
+   "cislo": "433019",
+   "typ": "PSTRUHOVY",
+   "sid": "4615297",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433008",
+   "n": "VITICKÝ (DALOVICKÝ) POTOK 1",
+   "url": "433008-viticky-dalovicky-potok-1",
+   "ok": true,
+   "cislo": "433008",
+   "typ": "PSTRUHOVY",
+   "sid": "4615293",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433024",
+   "n": "LIBOCKÝ POTOK 2",
+   "url": "433024-libocky-potok-2",
+   "ok": true,
+   "cislo": "433024",
+   "typ": "PSTRUHOVY",
+   "sid": "4615298",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433077",
+   "n": "LOBEZSKÝ POTOK 1",
+   "url": "433077-lobezsky-potok-1",
+   "ok": true,
+   "cislo": "433077",
+   "typ": "PSTRUHOVY",
+   "sid": "4615299",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433047",
+   "n": "STŘELA 5 B",
+   "url": "433047-strela-5-b",
+   "ok": true,
+   "cislo": "433047",
+   "typ": "PSTRUHOVY",
+   "sid": "4615289",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433052",
+   "n": "ÚHLAVA 2",
+   "url": "433052-uhlava-2",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/433052-uhlava-2"
+  },
+  {
+   "c": "433056",
+   "n": "ÚHLAVA 9",
+   "url": "433056-uhlava-9",
+   "ok": true,
+   "cislo": "433056",
+   "typ": "PSTRUHOVY",
+   "sid": "4615303",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433058",
+   "n": "ÚSLAVA 4",
+   "url": "433058-uslava-4",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/433058-uslava-4"
+  },
+  {
+   "c": "433501",
+   "n": "VELKÁ TRASOVKA 1",
+   "url": "433501-velka-trasovka-1",
+   "ok": true,
+   "cislo": "433501",
+   "typ": "PSTRUHOVY",
+   "sid": "4615310",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433062",
+   "n": "VOLŠOVKA 1",
+   "url": "433062-volsovka-1",
+   "ok": true,
+   "cislo": "433062",
+   "typ": "PSTRUHOVY",
+   "sid": "4615311",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "433065",
+   "n": "ZÁVIŠÍNSKÝ POTOK 1",
+   "url": "433065-zavisinsky-potok-1",
+   "ok": true,
+   "cislo": "433065",
+   "typ": "PSTRUHOVY",
+   "sid": "4615314",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "443003",
+   "n": "BÍLINA 9",
+   "url": "443003-bilina-9",
+   "ok": true,
+   "cislo": "443003",
+   "typ": "PSTRUHOVY",
+   "sid": "4615591",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "443008",
+   "n": "ČERNÝ POTOK 1",
+   "url": "443008-cerny-potok-1",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/443008-cerny-potok-1"
+  },
+  {
+   "c": "443502",
+   "n": "JEŠTĚDKA 1",
+   "url": "443502-jestedka-1",
+   "ok": true,
+   "cislo": "443502",
+   "typ": "PSTRUHOVY",
+   "sid": "4615420",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "443501",
+   "n": "JEŠTĚDSKÝ POTOK 1",
+   "url": "443501-jestedsky-potok-1",
+   "ok": true,
+   "cislo": "443501",
+   "typ": "PSTRUHOVY",
+   "sid": "4615334",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "443018",
+   "n": "JIŘÍKOVSKÝ POTOK 1",
+   "url": "443018-jirikovsky-potok-1",
+   "ok": true,
+   "cislo": "443018",
+   "typ": "PSTRUHOVY",
+   "sid": "4615336",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "443067",
+   "n": "Křinice 1 B",
+   "url": "443067-krinice-1-b",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/443067-krinice-1-b"
+  },
+  {
+   "c": "453114",
+   "n": "CHRUDIMKA 5 B",
+   "url": "453114-chrudimka-5-b",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/453114-chrudimka-5-b"
+  },
+  {
+   "c": "453068",
+   "n": "PETŘÍKOVICKÝ POTOK 1",
+   "url": "453068-petrikovicky-potok-1",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/453068-petrikovicky-potok-1"
+  },
+  {
+   "c": "453098",
+   "n": "VÁLOVICKÝ POTOK 1",
+   "url": "453098-valovicky-potok-1",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/453098-valovicky-potok-1"
+  },
+  {
+   "c": "453116",
+   "n": "ZLATÝ POTOK 2",
+   "url": "453116-zlaty-potok-2",
+   "ok": true,
+   "cislo": "453116",
+   "typ": "PSTRUHOVY",
+   "sid": "404114851564603255302406147",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "453019",
+   "n": "JAVORKA 2 P",
+   "url": "453019-javorka-2-p",
+   "ok": true,
+   "cislo": "453019",
+   "typ": "PSTRUHOVY",
+   "sid": "4616455",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "453022",
+   "n": "JIZERA 8 P",
+   "url": "453022-jizera-8-p",
+   "ok": true,
+   "cislo": "453022",
+   "typ": "PSTRUHOVY",
+   "sid": "4616463",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "453039",
+   "n": "LIBUŇKA 1 P",
+   "url": "453039-libunka-1-p",
+   "ok": true,
+   "cislo": "453039",
+   "typ": "PSTRUHOVY",
+   "sid": "4615389",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "453087",
+   "n": "VAZOVECKÝ POTOK 1",
+   "url": "453087-vazovecky-potok-1",
+   "ok": true,
+   "cislo": "453087",
+   "typ": "PSTRUHOVY",
+   "sid": "4615308",
+   "gps": [
+    null,
+    null
+   ],
+   "geom": false,
+   "keys": [
+    "sid",
+    "friendlyUrl",
+    "oficialniNazev",
+    "cislo",
+    "uzemniSvaz",
+    "organizace",
+    "typReviru",
+    "mistniVyznam",
+    "lovNonstop",
+    "lovZLodky",
+    "lovPodLedem",
+    "vhodneHandicap",
+    "typVodniOblasti",
+    "popis",
+    "delka",
+    "rozloha",
+    "spolecnyRybolov"
+   ]
+  },
+  {
+   "c": "473100",
+   "n": "STŘÍBRNÝ POTOK 1",
+   "url": "473100-stribrny-potok-1",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/473100-stribrny-potok-1"
+  },
+  {
+   "c": "473102",
+   "n": "OPAVA 9",
+   "url": "473102-opava-9",
+   "ok": false,
+   "err": "Error: HTTP 404 https://ris.rybsvaz.cz/proxy/api/public/reviry/by-friendly-url/473102-opava-9"
+  }
+ ]
+}

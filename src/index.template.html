@@ -455,7 +455,7 @@ async function renderZar(){
 /* ---------- průtoky ---------- */
 const OBLASTI=["Krkonoše a Orlické hory","Jizerské hory a Liberecko","Šumava a jih Čech","Krušné hory a západ","Vysočina","Jeseníky","Beskydy"];
 let FLOWF=null;
-function lvl(q,qa){if(!(q>=0)||!(qa>0))return null;const r=q/qa;
+function lvl(q,qa){if(q==null||!(q>=0)||!(qa>0))return null;const r=q/qa;
   if(r<0.25)return{r,t:"velmi málo vody",c:"var(--bad)"};if(r<0.5)return{r,t:"málo vody",c:"var(--warn)"};
   if(r<1.3)return{r,t:"běžný stav",c:"var(--ok)"};if(r<3)return{r,t:"zvýšený",c:"var(--water)"};return{r,t:"vysoký, kalný",c:"var(--bad)"};}
 const fq=v=>v==null||!isFinite(v)?"—":(v<1?v.toFixed(v<0.1?3:2):v<10?v.toFixed(2):v.toFixed(1)).replace(".",",");

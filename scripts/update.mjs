@@ -2,6 +2,7 @@
 // Každý krok běží samostatně: když jeden zdroj selže, ostatní data se i tak obnoví.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { buildStanice } from "./stanice.mjs";
 import { get, pool, pragueNow, encodeGeom, stripTags, decodeEntities, parseCzDate, parseStockingText } from "./lib.mjs";
 
 const DATA = new URL("../data/", import.meta.url).pathname;
@@ -77,8 +78,20 @@ async function podminky(list) {
 }
 
 // ---------- 3) Průtoky ČHMÚ ----------
+// Seznam stanic se sestaví automaticky (řeky s revíry tohoto typu) a jednou měsíčně obnoví.
+const TYP = "P";
 async function prutoky() {
-  const meta = await readJSON("stanice.json");
+  let meta = await readJSON("stanice.json");
+  let nove = 0;
+  if (!meta?.stanice?.length || !meta.vytvoreno || (Date.now() - Date.parse(meta.vytvoreno)) > 30 * 864e5) {
+    try {
+      const rv = await readJSON("reviry.json"); const seed = await readJSON("oblasti-seed.json", []);
+      const out = await buildStanice({ typ: TYP, reviry: rv.reviry, seed, log });
+      if (out.length < 20) throw new Error("málo stanic: " + out.length);
+      await writeJSON("stanice.json", { vytvoreno: now.date, stanice: out }); nove = out.length; meta = await readJSON("stanice.json");
+      log("stanice", out.length);
+    } catch (e) { log("stanice chyba", e.message); if (!meta?.stanice?.length) throw e; }
+  }
   const want = new Set(meta.stanice.map((s) => String(s.seq)));
   const vals = new Map();
   for (let p = 1; p <= 14; p++) {
@@ -102,7 +115,7 @@ async function prutoky() {
   const stanice = meta.stanice.map((s) => { const v = vals.get(String(s.seq)) || {}; return { ...s, h: isFinite(v.h) ? v.h : null, q: isFinite(v.q) ? v.q : null, trend: v.trend || "ustaleny", cas: v.cas || "" }; });
   await writeJSON("prutoky.json", { aktualizovano: now.iso, zdroj: "ČHMÚ – hlásné profily (floodmaps.chmi.cz)", stanice });
   log("průtoky", vals.size, "stanic");
-  return { stanic: vals.size };
+  return { stanic: vals.size, noveStanice: nove };
 }
 
 // ---------- karty aktualit (RIS i weby územních svazů běží na stejném systému) ----------
@@ -166,7 +179,7 @@ async function zarybneni() {
     log("vysazování", c.titul, recs.length, "záznamů");
     add.push(...recs);
   }
-  const limit = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10);
+  const limit = new Date(Date.now() - 400 * 864e5).toISOString().slice(0, 10); // rok zpět kvůli „poslednímu známému zarybnění“
   const zaznamy = [...prev.zaznamy, ...add].filter((z) => z.datum >= limit);
   const doDatum = zaznamy.reduce((m, z) => (z.datum > m ? z.datum : m), "");
   const zpracovane = [...new Set([...(prev.zpracovane || []), ...nove.map((c) => c.url)])].slice(-60);

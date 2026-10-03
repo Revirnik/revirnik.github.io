@@ -2,6 +2,8 @@
 import { writeFile } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { get } from "./lib.mjs";
+import { mkdirSync } from "node:fs";
+mkdirSync(new URL("../diag/", import.meta.url), { recursive: true });
 const save = (f, t) => writeFile(new URL("../diag/" + f, import.meta.url), typeof t === "string" ? t : JSON.stringify(t, null, 1));
 const bin = async (url) => { const r = await fetch(url, { headers: { "User-Agent": "Pstruh/1.0" } }); if (!r.ok) throw new Error(r.status + " " + url); return Buffer.from(await r.arrayBuffer()); };
 const pdf = async (url, name) => { const b = await bin(url); await writeFile("/tmp/" + name + ".pdf", b); execFileSync("pdftotext", ["-layout", "/tmp/" + name + ".pdf", "/tmp/" + name + ".txt"]); const t = (await import("node:fs")).readFileSync("/tmp/" + name + ".txt", "utf8"); await save(name + ".txt", t.split("\n").slice(0, 250).join("\n")); return t.length; };

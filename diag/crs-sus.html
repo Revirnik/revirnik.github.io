@@ -1,0 +1,472 @@
+ 
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>ČRS SÚS</title>    
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta property="og:title" content="Český rybářský svaz, Středočeský územní svaz" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.crs-sus.cz" />
+      <meta property="og:image" content="https://www.crs-sus.cz/img/fb_logo_crssus.png" />
+      <meta property="og:site_name" content="Český rybářský svaz, z. s., Středočeský územní svaz" />
+      <meta name="description" lang="cs-cz" content="Český rybářský svaz, Středočeský územní svaz"> 
+      <meta name="keywords" content="črssús, rybářský, svaz, středočeský, praha, zbraslav, střední, čechy, ">
+      <meta name="robots" content="index,follow">
+      <meta name="author" content="Robert Valecko">
+      <meta name="googlebot" content="index,follow,archive,snippet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="/img/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <script src="/css/jquery-3.4.1.min.js"></script>
+      <link rel="stylesheet" href="/css/colorbox.css" type="text/css">
+      <script src="/css/jquery.colorbox.js"></script> 
+      <link rel="stylesheet" href="/css/jquery-ui.min.css" type="text/css">
+      <script src="/css/jquery-ui.min.js"></script>
+      <script src="/css/cycle.js"></script>
+      <link rel="stylesheet" href="/css/crs-sus-12062026.css" type="text/css">
+      <script src="/css/crs-sus-240320.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js?render=6Lcq6T4aAAAAAI06HtrFuk52OMwBSSlmgsa45_FN"></script>
+      <script src="/css/recaptchajs_270121.js"></script>
+    </head>
+    <body> 
+      <div class="vyhledat_wh">
+        <div class="vyhledat_ob">
+          <p class="aligright pad10"><input type="text" name="search" id="autocomplete" value="" placeholder="zadejte hledaný výraz"></p>
+        </div>
+        <div class="vyhledat_close">
+          <p class="aligright padright10"><a href="/" class="li_white" target="_top">ZAVŘÍT</a></p>
+        </div>
+        <div class="footer"></div>
+      </div>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $( "#autocomplete" ).autocomplete({
+        autoFocus: false,
+        minLength: 1,
+        noCache: true,
+        autoFill: true,
+        scrollHeight: 220,
+        delay: false,
+        source: '/search.php',
+          select: function (event, ui) {
+            $(event.target).val(ui.item.label);
+            if(ui.item.auturl=="1"){
+            window.location = ui.item.value;
+            return false;
+            }else{
+            return false;
+            }
+          },
+          search: function (e, u) {
+            $(this).addClass('loader');
+          },
+          response: function (e, u) {
+            $(this).removeClass('loader');
+          }
+        }).data("uiAutocomplete")._renderItem = function (ul, item) {
+        return $("<li></li>")
+            .data("item.autocomplete", item)
+            .append("<a><div class='autocomplete_ob' style='background-image: URL(" + item.icon + ");'><p class='autocomplete_p'>" + item.label + "</p></div></a>")
+            .appendTo(ul)};
+      });
+      </script>
+			<div class="cookie_ob">
+				<p class="p_cookie">
+				Tato webová stránka ukládá data, jako jsou soubory cookie, aby umožnila základní funkčnost stránek, jakož i marketing, 
+				personalizaci a analýzu. Nastavení můžete kdykoli změnit.<br><br><br><a href="?act=cosouhlas" class="li_cookie"><span class="sp_cookie">PŘIJMOUT VŠE</span></a><br><br><a href="/177/cookies-sprava-predvoleb" class="li_cookie">spravovat předvolby</a></p>
+			</div> 
+      <div class="h1_tit"><h1 class="h1_cl">Český rybářský svaz, z. s., Středočeský územní svaz</h1></div>
+      <div class="head_desk_wh">
+        <div class="head_desk_ob">
+          <div class="head_desk_in_logo"><a href="/"><img src="/img/logo_top.png" class="img_logo_top" alt="logo"></a></div>
+          <div class="head_desk_in_menu">
+            <div class="menu_burger"></div>
+            <div class="menu">
+              <ul>
+                <li><a href="/">Aktuality</a></li>
+                <li><a href="/2/o-nas">O nás</a></li>
+                <li><a href="/3/mo-a-reviry">MO a revíry</a></li>
+                <li><a href="/117/rybnikarstvi">Rybníkářství</a></li>
+                <li><a href="/4/sport-lru">Sport (LRU)</a></li>
+                <li><a href="/5/deti-a-mladez">Děti a mládež</a></li>
+                <li><a href="/6/stredocesky-rybar">Středočeský rybář</a></li>
+                <li><a href="/7/predpisy">Předpisy</a></li>
+                <li><a href="/8/spolupracujeme">Spolupracujeme</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-image img1">
+        <div class="uvod_ob">
+          <div class="tit_slide sl_right">
+            <p class="p_uv_1">ČESKÝ RYBÁŘSKÝ SVAZ, z. s.</p>
+            <p class="p_uv_2">STŘEDOČESKÝ ÚZEMNÍ SVAZ</p>
+          </div>
+          <div class="footer"></div>
+        </div>
+        <div class="footer"></div>
+      </div>
+      <div class="wrapper" id="uvod">
+        <div class="guide_wh">
+          <div class="guide_ob">
+            <p class="p_guide"><a href="/" class="li_guide">Úvod</a></p>
+          </div>
+        </div>
+        <div class="main_wh">
+          <div class="main_left">
+            <div class="box_left">
+              <p class="aligright txtcolbluedark bold ftsize24 padtop5">Aktuality <img src="/img/logo_top.png" class="ico_title" alt="tit"></p>
+            </div>
+            <a href="/1/4337/pozvanka-na-muskarskou-divizi-sus">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_ae7ed32086.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Pozvánka na muškařskou divizi SÚS</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">02.10.2026 &bull;</span> ČRS, z. s, SÚS, MO Brandýs nad Labem–Stará Boleslav a CFFC. z. s. zvou na muškařský závod tříčlenných družstev divize SÚS 2026, který se koná 31. 10. 2026 na vodní ploše Mlynařice 3 - Dvroce.
+</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4336/intranet-scitani-kormoranu-202627-dokumenty-z-konference-sus">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_a8e668c996.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Intranet - sčítání kormoránů 2026-27, dokumenty z konference SÚS</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">02.10.2026 &bull;</span> Do Intranetu, složka Formuláře ke stažení, jsme vložili materiály ke sčítání kormoránů 2026-27 a najdete je pod čísly 302-305 a do složky Dokumenty pro MO byly vloženy materiály z konference SÚS pod čísly 403-406.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4335/zakaz-rybolovu-na-casti-reviru-kacak-4-dne-31-10-">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_7060ac72ac.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Zákaz rybolovu na části revíru Kačák 4, dne 31. 10. </p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">02.10.2026 &bull;</span> ČRS, z. s., MO Kladno oznamuje zákaz rybolovu na části revíru 411 033 Kačák 4 (na hloubce u Liky) dne 31. 10. 2026 do 14.00 hod.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4334/zakaz-rybolovu-na-reviru-kacak-4-ve-dnech-1116-10">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_82627ca08d.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Zákaz rybolovu na revíru Kačák 4 ve dnech 11.-16. 10.</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">02.10.2026 &bull;</span> ČRS, z. s., MO Kladno oznamuje zákaz rybolovu na celém revíru 411 033 Kačák 4 ve dnech 11.-16. 10. 2026.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4333/zakaz-rybolovu-na-casti-reviru-kacak-4-dne-10-10">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_965f7a96d2.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Zákaz rybolovu na části revíru Kačák 4, dne 10. 10.</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">02.10.2026 &bull;</span> ČRS, z. s., MO Kladno oznamuje zákaz rybolovu na části revíru 411 033 Kačák 4 (na hloubce u Liky a to do 15.00 hodin) dne 10. 10. 2026.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4332/dnesni-vysazeni-linu-okounu-a-kapru">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_690f7e077e.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Dnešní vysazení línů, okounů a kaprů</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">01.10.2026 &bull;</span> Dnes bylo do revírů místních organizací a SÚS vysazeno 582 kg línů (průměrná hmotnost 0,15 kg/ks), 30 kg okounů (hmotnost 0,15-0,2 kg) a 450 kg kaprů (průměrná hmotnost 2,9 kg/ks).</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4331/vysazeni-parmicek-do-stredoceskych-rek">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_a1122a0820.jpeg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Vysazení parmiček do středočeských řek</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">01.10.2026 &bull;</span> Včera bylo rozvezeno a vysazeno celkem 12 500 ks parmiček o velikosti cca 7 cm. Kromě zarybňovací povinnosti se jednalo i o vícezarybnění, které financuje SÚS.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4330/putovni-pohar-mezi-handicapovanymi-rybari-ziskal-martin-kovar">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_6e75c0a85f.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Putovní pohár mezi handicapovanými rybáři získal Martin Kovář</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">01.10.2026 &bull;</span> O víkendu 26. a 27. září 2026 uspořádala místní organizace handicapovaných rybářů Kladruby u Vlašimi tradiční podzimní rybářské závody na nádrži Záhorská. Po celý víkend panovala příjemná atmosféra, přálo i počasí a o pěkné úlovky nebyla nouze.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4329/zavody-malych-rybaru-na-rybniku-radost-v-zebrace">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_39e0fb2b39.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Závody malých rybářů na rybníku Radost v Žebráce</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">30.09.2026 &bull;</span> V sobotu (12. 9.) uspořádala místní organizace Žebrák na rybníku Radost dětské rybářské závody. Krásné slunečné počasí a klidná hladina rybníka přilákaly malé rybáře nejen z místního rybářského kroužku.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4328/vysazeni-stik-a-candatu">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_06c9e2ed99.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Vysazení štik a candátů</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">29.09.2026 &bull;</span> Dnes bylo do vodní plochy Stržený vysazeno 51 kg candátů (průměrná hmotnost 1,9 kg/ks) a do vodní plochy Jelito 57 kg štik (průměr 1,9 kg/ks).
+
+</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4327/zemrela-jaroslava-frysova">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_c426660ddc.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Zemřela Jaroslava Fryšová</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">29.09.2026 &bull;</span> S velkým zármutkem oznamujeme, že naše řady navždy opustila Jaroslava Fryšová, která v našem územním svazu pracovala 23 let. Zemřela po těžké nemoci ve věku 61 let.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4326/na-jizerskem-okounku-2026-starovalo-53-zavodniku">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_52608bdda5.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Na Jizerském okounku 2026 starovalo 53 závodníků</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">28.09.2026 &bull;</span> V sobotu (26. 9.) proběhl v Mladé Boleslavi na Krásné louce již 16. ročník dětského přívlačového závodu Jizerský okounek. Ke startu nastoupilo 53 dětí z celé republiky.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4325/kontroly-reviru-ve-spolupraci-s&nbsp;policii-cr">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_c131102f3e.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Kontroly revírů ve spolupráci s Policií ČR</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">28.09.2026 &bull;</span> V uplynulých dnech byly vykonány kontroly revírů členy rybářské stráže (MO Nymburk, MO Kladno) a ve spolupráci s Poříčním oddělením Nymburk. Zkontrolovány byly revíry Písková Lhota, Labe 21, Labe 21 A – Tůně a nádrže, Labe 23 A a Labe 24 D.</p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4324/vodnik-v&nbsp;pribrami-&ndash;-140-deti">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_913306bb90.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">Vodník v Příbrami – 140 dětí</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">28.09.2026 &bull;</span> Příbramská místní organizace uspořádala v pátek (25. 9.) náborovou akci „Ve vodě nežijí jen vodníci“, které se zúčastnilo 140 dětí ze ZŠ Jiráskovy sady a ZŠ pod Svatou Horou. </p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <a href="/1/4323/sus-vydrazil-pozemky-na-reviru-mastnik-1">
+            <div class="box_left_aktiv">
+              <div class="article_foto"><img src="https://semax.crs-sus.cz/img_article/thumbs/semax_b7eb58ae44.jpg" class="img_article" alt="foto"></div>
+              <div class="article_txt">
+                <div class="article_txt_tit">
+                  <p class="txtcolwhite bold ftsize16 pad10">SÚS vydražil pozemky na revíru Mastník 1</p>
+                </div>
+                <div class="article_txt_body">
+                  <p class="pad10"><span class="txtcolblue">25.09.2026 &bull;</span> Středočeskému územnímu svazu se podařilo získat další důležitý pozemek v rámci revíru č. 411 062 MASTNÍK 1, na retenční nádrži o výměře 18 ha, jejímž uživatelem je MO Sedlčany. </p>
+                </div>
+              </div>
+              <div class="footer"></div>
+            </div>
+            </a>
+            <div class="count_ob">
+              <div class="count_in"><span class="article_stran_span">Předchozí</span><a href="?page=1#uvod" class="article_stran_ac">1</a><a href="?page=2#uvod" class="article_stran">2</a><a href="?page=3#uvod" class="article_stran">3</a><a href="?page=4#uvod" class="article_stran">4</a><a href="?page=2#uvod" class="article_stran">Další</a><a href="?page=271#uvod" class="article_stran">Poslední</a></div>
+            </div>
+		<div id="slideshow1">
+			<a href="https://www.nikl.cz/k296-specialni-nastrahy.php?vyrobce=2" target="_blank" title="Navštívit stránky www.nikl.cz"><img src="https://semax.crs-sus.cz/img_banner/NIKL_sus_halibut_1000x250.gif" class="img_slideshow1" alt="Nikl"/></a>
+					
+					
+					  
+		</div>
+            <div class="footer"></div>
+          </div>
+          <div class="main_right">
+            <div class="box_right_piskovna" onclick="location.href='/155/piskovna-piskova-lhota'"> 
+              <p class="aligright txtcolwhite bold ftsize18 padt17r10 ">PÍSKOVNA</p>
+              <p class="aligright txtcolwhite normal ftsize16 padright10">PÍSKOVÁ LHOTA</p>
+            </div>
+            <div class="box_right_aktualne" onclick="location.href='/170/aktuality-emailem'"> 
+              <p class="aligright txtcolwhite bold ftsize18 padt17r10 ">AKTUALITY E-MAILEM</p>
+              <p class="aligright txtcolwhite normal ftsize16 padright10">Klikněte a přihlaste se k odběru</p>
+            </div>
+            <div class="box_right_search" id="srcbox"><p class="aligright txtcolwhite bold ftsize20 padright10 lheight80">VYHLEDAT</p></div>
+            <div class="box_right_kontakt" onclick="location.href='/116/napiste-nam'"><p class="aligright txtcolwhite bold ftsize20 padright10 lheight80">NAPIŠTE NÁM</p></div>
+            <div class="box_right_intranet" onclick="location.href='/26/intranet'"><p class="aligright txtcolwhite bold ftsize20 padright10 lheight80">INTRANET</p></div>
+            <div class="box_right"><a href="https://www.kb.cz/cs/transparentni-ucty/115-8444200237" target="_blank" title="Přejít na stránky Komerční banka a.s. zobrazit aktuální stav transparentního účtu"><img src="/img/kb_ucet_transparent.png" class="frame_kb" alt="KB"></a></div>
+            <div class="box_right_publ">
+              <p class="aligright txtcolwhite normal ftsize16 pad17-10-0-0 lheight40">POČET NÁVŠTĚV</p> 
+              <p class="aligright txtcolwhite bold ftsize18 padright10">51 675 889</p>
+            </div>
+            <div class="box_right">
+              <p class="aligright">
+              <a href="https://www.slunecno.cz/mista/praha-zbraslav-1325"><img src="https://www.slunecno.cz/pocasi-na-web.php?n&amp;obr=9&amp;m=1325&amp;d=5&amp;p1=EBEBEB&amp;pruhl&amp;p2=00BDF2&amp;p3=FFFFFF&amp;t2=FFFFFF" alt="Počasí Praha-Zbraslav - Slunečno.cz" class="pocasi"></a>
+              </p>
+            </div>
+      <div id="slideshow2">
+          
+          
+            
+      </div>
+            <div class="footer"></div>
+          </div>
+          <div class="footer"></div>
+        </div>
+		<div class="loga_wh">
+			<div class="loga_in">
+				<a href="https://www.rybsvaz.cz/beta/index.php" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot1"></span></a>
+				<a href="http://eagri.cz/public/web/mze/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot2"></span></a>
+				<a href="https://www.kr-stredocesky.cz/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot3"></span></a>
+				<a href="http://www.msmt.cz/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot4"></span></a>
+				<a href="http://www.msmt.cz/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot10"></span></a>
+				<a href="/82/133/financovano-evropskou-unii" target="_top" title="Přejít na ww stránky"><span class="sp_loga_bot logobot5"></span></a>
+				<a href="https://www.srs-vodnany.cz/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot6"></span></a>
+				<a href="https://www.mivardi.cz/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot7"></span></a>
+				<a href="https://www.zachrankaapp.cz/" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot8"></span></a>
+				<a href="https://www.maso-trebovle.cz/o-firme.html" target="_blank" title="Přejít na ww stránky"><span class="sp_loga_bot logobot9"></span></a>
+				<div class="footer"></div>
+			</div>                       
+		</div>
+        <div class="navigace_wh">
+          <div class="navigace_in">
+            <div class="navigace_box">
+              <p class="bold txtcolwhite padbot15">RYCHLÁ NAVIGACE</p>
+              <p><a href="/" class="li_white">• Úvod</a></p>
+              <p><a href="/2/o-nas" class="li_white">• O nás</a></p>
+              <p><a href="/3/mo-a-reviry" class="li_white">• MO a revíry</a></p>
+              <p><a href="/117/rybnikarstvi" class="li_white">• Rybníkářství</a></p>
+              <p><a href="/4/sport-lru" class="li_white">• Sport (LRU)</a></p>
+              <p><a href="/5/deti-a-mladez" class="li_white">• Děti a mládež</a></p>
+              <p><a href="/6/stredocesky-rybar" class="li_white">• Středočeský rybář</a></p>
+              <p><a href="/7/predpisy" class="li_white">• Předpisy</a></p>
+              <p><a href="/8/spolupracujeme" class="li_white">• Spolupracujeme</a></p>
+              <p><a href="/116/napiste-nam" class="li_white">• NAPIŠTE NÁM</a></p>
+              <p><a href="/26/intranet" class="li_white">• INTRANET</a></p>
+              <p><a href="/139/zpracovani-osobnich-udaju" class="li_white">• Zpracování osobních údajů</a></p>
+              <p><a href="/171/informace-kamerovy-system" class="li_white">• Informace kamerový systém</a></p>
+              <p><a href="/177/cookies-sprava-predvoleb" class="li_white">• Cookies - správa předvoleb</a></p>
+              <p><a href="/178/kalendar-akci" class="li_white">• KALENDÁŘ AKCÍ</a></p>
+              <div class="footer"></div>
+            </div>
+            <div class="navigace_box_sp"></div>
+            <div class="navigace_box">
+              <p class="bold txtcolwhite padbot15">KONTAKT</p>
+              <p class="txtcolwhite padbot15 bold">
+              Český rybářský svaz, z. s.,<br>
+              Středočeský územní svaz
+              </p>
+              <p class="txtcolwhite padbot15">
+              K Novým domkům 82, Lahovice<br>
+              159 00 Praha - Zbraslav<br>
+              IČ: 004 34 108
+              </p>
+              <p class="txtcolwhite pad0 bold">
+              Úřední hodiny sekretariátu SÚS
+              </p>
+              <p class="txtcolwhite padbot15">
+              Úterý: 8.00 – 11.30, 13.00 - 16.00<br>
+              Čtvrtek: 8.00 – 11.30, 13.00 - 16.00<br>
+              V ostatní dny po telefonické domluvě.
+              </p>
+              <p class="txtcolwhite padbot15">
+              telefon: +420 723 769 726, +420 224 934 984
+              </p>
+              <p class="txtcolwhite pad0 bold">
+              Úřední hodiny předsedy SÚS
+              </p>
+              <p class="txtcolwhite padbot15">
+              První čtvrtek v měsíci 16.00 - 18.00<br>
+              Jinak po telefefonické domluvě.
+              </p>
+              <div class="footer"></div>
+            </div>
+            <div class="navigace_box_sp"></div>
+            <div class="navigace_box">
+              <div class="navigace_box_soc" onclick="window.open('https://www.facebook.com/%C4%8CRS-St%C5%99edo%C4%8Desk%C3%BD-%C3%BAzemn%C3%AD-svaz-282422198625808/', '_blank'); return false">
+              <p class="txtcolwhite padtop10 aligright">ČRS Středočeský územní svaz <img src="/img/icofb.png" class="ico_soc" alt="fb"></p>
+              </div>
+              <div class="navigace_box_soc" onclick="window.open('https://www.instagram.com/crs_stredocesky?igsh=MW83OW9pODd4dmtxMQ%3D%3D', '_blank'); return false">
+              <p class="txtcolwhite padtop10 aligright">crs_stredocesky <img src="/img/icoinst.png" class="ico_soc" alt="inst"></p>
+              </div>
+              <div class="navigace_box_soc" onclick="window.open('https://www.youtube.com/channel/UCvC7mYE9yYzeSJ1LJYbHwcA', '_blank'); return false">
+              <p class="txtcolwhite padtop10 aligright">Televize SUS <img src="/img/icoyou.png" class="ico_soc" alt="you"></p>
+              </div>
+              <div class="footer"></div>
+            </div>
+            <div class="footer"></div>
+          </div>
+          <div class="footer"></div>
+        </div>
+        <div class="bottom_wh">
+          <div class="scroll_top"></div>
+          <div class="bottom_in"> 
+            <p class="p_copyr">© 2026 ČRS SÚS</p>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </body>
+  </html>

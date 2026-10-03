@@ -1,0 +1,190 @@
+              ZARYBNĚNÍ REVÍRŮ - 2026
+ DATUM       REVÍR    PODREVÍR        NÁZEV                      DRUH
+25.09.2026   401020                   Vltava 8                kapr obecný
+24.09.2026   401020                   Vltava 8                kapr obecný
+23.09.2026   403011                  Výmola 2                pstruh duhový
+23.09.2026   403005               Pitkovický potok           pstruh duhový
+23.09.2026   403008               Únětický potok             pstruh duhový
+23.09.2026   403006              Radotínský potok            pstruh duhový
+22.09.2026   401022              Údolní nádrž Slapy           kapr obecný
+21.09.2026   403002                  Kocába 1                siven americký
+21.09.2026   401204                   Drásov                 siven americký
+20.09.2026   401016                   Vltava 4           amur bílý, štika obecná
+20.09.2026   401015                   Vltava 3           kapr obecný, lín obecný
+17.09.2026   401002                 Berounka 2                bolen dravý
+17.09.2026   401001                 Berounka 1                bolen dravý
+17.09.2026   401022              Údolní nádrž Slapy           bolen dravý
+17.09.2026   401020                   Vltava 8                bolen dravý
+17.09.2026   401018                   Vltava 6                bolen dravý
+17.09.2026   401017                   Vltava 5                bolen dravý
+17.09.2026   401026                  Sázava 12         bolen dravý, parma obecná
+17.09.2026   401025                  Sázava 11         bolen dravý, parma obecná
+17.09.2026   401011                  Sázava 5                 bolen dravý
+17.09.2026   401010                  Sázava 4                 bolen dravý
+17.09.2026   401009                  Sázava 1                 bolen dravý
+16.09.2026   403002                  Kocába 1         pstruh duhový, pstruh potoční
+16.09.2026   401001                 Berounka 1                kapr obecný
+16.09.2026   401026                  Sázava 12                kapr obecný
+11.09.2026   401002                  Brounka 2                kapr obecný
+09.09.2026   401001                 Berounka 1                kapr obecný
+20.08.2026   401020                   Vltava 8                kapr obecný
+15.07.2026   401025                  Sázava 11                kapr obecný
+15.07.2026   401011                  Sázava 5                 kapr obecný
+15.07.2026   401010                  Sázava 4                 kapr obecný
+14.07.2026   401022              Údolní nádrž Slapy           kapr obecný
+12.06.2026   401217                    Jiviny                 kapr obecný
+12.06.2026   401216                    Liboc                  kapr obecný
+12.06.2026   401221                    Hliník                 kapr obecný
+12.06.2026   401018      1.          Nepomuk                  kapr obecný
+05.06.2026   403008               Únětický potok             pstruh duhový
+05.06.2026   403006              Radotínský potok            pstruh duhový
+05.06.2026   403005               Pitkovický potok           pstruh duhový
+05.06.2026   403011                   Výmola                 pstruh duhový
+04.06.2026   401029                   Labe 20                  úhoř říční
+04.06.2026   401022              Údolní nádrž Slapy            úhoř říční
+04.06.2026   401020                   Vltava 8                 úhoř říční
+04.06.2026   401009                  Sázava 1                  úhoř říční
+04.06.2026   401002                 Berounka 2                 úhoř říční
+04.06.2026   401001                 Berounka 1                 úhoř říční
+04.06.2026   401005                   Botič 2                  úhoř říční
+04.06.2026   401004           Pančák rybník               úhoř říční
+04.06.2026   401220            Labuť rybník               úhoř říční
+04.06.2026   401230           Únětický malý               úhoř říční
+04.06.2026   401229           Únětický horni              úhoř říční
+04.06.2026   401214              Slatiny                  úhoř říční
+04.06.2026   401202             Rohožník                  úhoř říční
+04.06.2026   401007   2.     Zámecký rybník               úhoř říční
+04.06.2026   401008   1.       Kyjský rybník              úhoř říční
+04.06.2026   401205              Kotlářka                 úhoř říční
+04.06.2026   401207          Olšanský rybník              úhoř říční
+04.06.2026   401217               Jiviny                  úhoř říční
+04.06.2026   401013               Džbán                   úhoř říční
+04.06.2026   401216               Liboc                   úhoř říční
+04.06.2026   401019              Vltava 7                 úhoř říční
+04.06.2026   401018              Vltava 6                 úhoř říční
+04.06.2026   401026             Sázava 12                 úhoř říční
+04.06.2026   401025             Sázava 11                 úhoř říční
+04.06.2026   401011              Sázava 5                 úhoř říční
+04.06.2026   401010              Sázava 4                 úhoř říční
+04.06.2026   403002              Kocába 1               pstruh duhový
+29.05.2026   401002   2.         Dolní tůň               kapr obecný
+20.05.2026   401006   3.         Splavěcí                kapr obecný
+20.05.2026   401019             Vltava 7A                kapr obecný
+20.05.2026   401030              Vltava 7                kapr obecný
+14.05.2026   401009              Sázava 1                štika obecná
+14.05.2026   401002            Berounka 2                štika obecná
+14.05.2026   401001            Berounka 1                štika obecná
+13.05.2026   401008   7.        Běchovice                kapr obecný
+13.05.2026   401214            Nádrž Slatina             kapr obecný
+13.05.2026   401008   2.    Koupelna Xaverov             kapr obecný
+13.05.2026   401008   1.       Malý Kysjký               kapr obecný
+06.05.2026   401227         Vokačovský rybník            kapr obecný
+06.05.2026   401232           Rybník V Luhu              kapr obecný
+06.05.2026   401024   1.          Fabrák                 kapr obecný
+06.05.2026   401018              Vltava 6                štika obecná
+06.05.2026   401017              Vltava 5                štika obecná
+06.05.2026   401008   1.       Kyjský rybník       štika obecná, kapr obecný
+06.05.2026   401005        Údolní nádrž Hostivař         štika obecná
+06.05.2026   401002            Berounka 2                štika obecná
+06.05.2026   401001            Berounka 1                štika obecná
+30.04.2026   401022         Údolní nádrž Slapy           štika obecná
+30.04.2026   401020              Vltava 8                štika obecná
+30.04.2026   401018              Vltava 6                štika obecná
+30.04.2026   401017              Vltava 5                štika obecná
+30.04.2026   401016              Vltava 4                štika obecná
+30.04.2026   401005              Vltava 3                štika obecná
+25.04.2026   401026             Sázava 12                kapr obecný
+24.04.2026   401022         Údolní nádrž Slapy            amur bílý
+24.04.2026   401228        Rybník Na Korouhvích           amur bílý
+24.04.2026   401208          Královský rybník             amur bílý
+24.04.2026   401224          Sychrovský rybník                   amur bílý
+24.04.2026   401223            Vackův rybník                     amur bílý
+23.04.2026   401022         Údolní nádrž Slapy                  štika obecná
+23.04.2026   401019               Vltava 7                      štika obecná
+23.04.2026   401018               Vltava 6                      štika obecná
+23.04.2026   401013              VD Džbán                       štika obecná
+23.04.2026   401009              Sázava 1                       kapr obecný
+22.04.2026   401214        Rentenčí nádrž Slatina               kapr obecný
+22.04.2026   401202         Rybník V Rohožníku                  kapr obecný
+22.04.2026   401008   5.      Újezd nad Lesy                    kapr obecný
+22.04.2026   403014             Sázava 11 P                    pstruh potoční
+17.04.2026   401032   6.        Semická II.              štika obecná, kapr obecný
+17.04.2026   401032   2.    Jezero pod Ostrou            štika obecná, kapr obecný
+17.04.2026   401032   4.          Doubka                 štika obecná, kapr obecný
+17.04.2026   401029               Labe 20                       štika obecná
+16.04.2026   401026              Sázava 12                        bílá ryba
+15.04.2026   403002              Kocába 1              pstruh duhový, pstruh obecný
+15.04.2026   403005          Pitkovický potok                  pstruh duhový
+15.04.2026   403011               Výmola                       pstruh duhový
+15.04.2026   403006          Radotínský potok                  pstruh duhový
+15.04.2026   403008           Únětický potok                   pstruh duhový
+15.04.2026   403007           Svinařský potok                  pstruh duhový
+15.04.2026   403003              Kocába 2                      pstruh duhový
+14.04.2026   403009          Vlkánčický potok                  pstruh duhový
+14.04.2026   401011              Sázava 5                      pstruh duhový
+14.04.2026   401010              Sázava 4                      pstruh duhový
+14.04.2026   403016             Sázavka 1 P                    pstruh duhový
+14.04.2026   401015             Sázava 12 P                    pstruh duhový
+14.04.2026   403014             Sázava 11 P                    pstruh duhový
+14.04.2026   401204               Drásov                       pstruh duhový
+14.04.2026   401016               Vltava 4                     pstruh duhový
+14.04.2026   401219           Lahovická nádrž                  pstruh duhový
+10.04.2026   401002             Berounka 2          štika obecná, okoun říční, lín obecný
+08.04.2026   401225        Vodní nádrž Rezervo                  štika obecná
+08.04.2026   401009              Sázava 1                       štika obecná
+08.04.2026   401005        Údolní Nádrž Hostivař                kapr obecný
+03.04.2026   401001             Berounka 1                      štika obecná
+02.04.2026   401006   1.        Nádrž Pleš                      kapr obecný
+02.04.2026   401215            Rybník Skála                     kapr obecný
+02.04.2026   401023   2.   Rybník Voznický Velký                kapr obecný
+02.04.2026   401222        Rybník Voznický Malý                 kapr obecný
+02.04.2026   401208          Královský rybník                   kapr obecný
+01.04.2026   401226         Vodní nádrž Osnice                  kapr obecný
+01.04.2026   401220            Labuť rybník                     kapr obecný
+01.04.2026   401207           Olšanský rybník                   kapr obecný
+01.04.2026   401001   1.       Pančák rybník                    kapr obecný
+31.03.2026   401013              ÚN Džbán                       kapr obecný
+31.03.2026   401008   4.         Klánovice                      kapr obecný
+31.03.2026   401205             RN Kotlářka                     kapr obecný
+31.03.2026   401231           Rybník Přibylák                   kapr obecný
+31.03.2026   403002                 Kocába tůň                      kapr obecný
+31.03.2026   401212               Rybník Koupelna                   kapr obecný
+31.03.2026   401211             Rybník NA Dráhách                   kapr obecný
+31.03.2026   401006   3.              Splavěcí                      kapr obecný
+31.03.2026   401228            Rybník Na Korouhvích                 kapr obecný
+31.03.2026   401026                  Sázava 12                      štika obecná
+31.03.2026   401025                  Sázava 11                      štika obecná
+30.03.2026   401232                Rybník V Luhu                    kapr obecný
+30.03.2026   401227              Vokačovský rybník                  kapr obecný
+30.03.2026   401201               Rybník Jankovák                   kapr obecný
+27.03.2026   401007   3         Rybník Cukrovarský                  kapr obecný
+27.03.2026   401007   1        Nádrž v Hovorčovicích                kapr obecný
+26.03.2026   401026                  Sázava 12                kapr obecný, štika obecná
+26.03.2026   401025                  Sázava 11                kapr obecný, štika obecná
+25.03.2026   401011                   Sázava 5               štika obecná, candát obecný
+25.03.2026   401010                   Sázava 4               štika obecná, candát obecný
+25.03.2026   401213               Rybník Martiňák                   kapr obecný
+25.03.2026   401008   3.              Xaverov                       kapr obecný
+25.03.2026   401206               Biologický rybník                 kapr obecný
+24.03.2026   401224              Sychrovský rybník                  kapr obecný
+24.03.2026   401223                Vackův rybník                    kapr obecný
+23.03.2026   401011                   Sázava 5                      kapr obecný
+20.03.2026   401033                  Vltava 8A                      kapr obecný
+20.03.2026   401021           Údolní nádrž Štěchovice               kapr obecný
+20.03.2026   401014   1.          Ctěnictká nádrž                   kapr obecný
+20.03.2026   401218                 nádrž Kbely                     kapr obecný
+20.03.2026   401203              Cukrovarský rybník                 kapr obecný
+20.03.2026   401010                   Sázava 4                      kapr obecný
+18.03.2026   401021           Údolní nádrž Štěchovice                 bílá ryba
+18.03.2026   401033                  Vltava 8A                        bílá ryba
+18.03.2026   401020        Údolní nádrž Vrané nad Vltavou             bílá ryba
+18.03.2026   401204                   Drásov                siven americký, pstruh duhový
+18.03.2026   401219               Lahovická nádrž                  pstruh duhový
+16.03.2026   401001                 Berounka 1                      kapr obecný
+13.03.2026   401002                 Berounka 2                      kapr obecný
+06.02.2026   401201               Rybník Jankovák                  Siven americký
+30.01.2026   401201               Rybník Jankovák                  Siven americký
+21.01.2026   401201               Rybník Jankovák                  Siven americký
+14.01.2026   401201               Rybník Jankovák                  Siven americký
+08.01.2026   401201               Rybník Jankovák                  Siven americký
+

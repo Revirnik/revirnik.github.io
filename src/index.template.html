@@ -493,6 +493,7 @@ function renderNews(d){ const out=$("out");
 
 /* ---------- nastavení provozovatele ---------- */
 const CFG={
+  kontakt:false,     // true = zobrazit tlačítko „Napište nám“
   email:"aveverky@gmail.com",          // kontaktní e-mail pro „Napište nám“
   iban:"",           // IBAN pro QR platbu (např. CZ65 0800 0000 1920 0014 5399)
   ucet:"",           // číslo účtu k zobrazení (např. 19-2000145399/0800)
@@ -517,7 +518,7 @@ if(CFG.iban||hasStripe){
   };
   $("donateBtn").onclick=()=>{ toggle("donatePanel"); if(!$("donatePanel").hidden) draw().catch(()=>{$("donateQr").textContent="QR kód se nepodařilo načíst.";}); };
 }
-if(CFG.email){
+if(CFG.kontakt && CFG.email){
   $("contactBtn").hidden=false;
   $("contactMail").textContent=CFG.email; $("contactMail").href="mailto:"+CFG.email+"?subject=Pstruh";
   $("contactBtn").onclick=()=>toggle("contactPanel");

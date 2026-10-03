@@ -209,6 +209,11 @@ ul.plain li{margin:3px 0}
 .st-h{color:var(--bad);font-weight:700}
 .st-l{color:var(--ok);font-weight:700}
 .sharebar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.btn.donate{background:var(--accent-soft);border-color:transparent;color:var(--accent);text-decoration:none}
+.btn.donate img{width:22px;height:22px;border-radius:6px}
+.btn.donate:hover{background:var(--accent);color:var(--accent-ink)}
+.donatenote{text-align:center;font-size:13px;color:var(--muted);margin:8px auto 0;max-width:420px}
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--muted);text-decoration:underline;cursor:pointer}
 .panel{margin:14px auto 0;max-width:420px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;text-align:center}
 .panel a.btn{text-decoration:none}
 .panel h3{margin:0 0 6px;font-size:18px}
@@ -327,15 +332,14 @@ ul.plain li{margin:3px 0}
 
   <div class="sharebar">
     <button class="btn" id="shareBtn">Poslat Pstruha kamarádovi</button>
-    <button class="btn" id="donateBtn" hidden>Podpořit provoz</button>
+    <a class="btn donate" id="donateCard" href="#" target="_blank" rel="noopener" hidden><img src="icons/icon-192.png" alt="">Přispět 25,- Kč</a>
     <button class="btn" id="contactBtn" hidden>Napište nám</button>
   </div>
+  <p class="donatenote" id="donateNote" hidden>Pstruh je zdarma a bez reklam. Příspěvkem od 25,- Kč pomůžete s jeho provozem. Děkujeme! <button class="linkbtn" id="donateBtn" hidden>Platba QR kódem</button></p>
   <div class="panel" id="donatePanel" hidden>
-    <h3>Podpořte Pstruha</h3>
-    <p>Pstruh je zdarma a bez reklam. Pokud vám pomohl najít vodu, můžete přispět na provoz a další vývoj.</p>
-    <p id="donateCardRow" hidden><a class="btn primary" id="donateCard" href="#" target="_blank" rel="noopener">Přispět kartou / Apple Pay</a><br><small>od 25 Kč, částku si zvolíte sami</small></p>
+    <h3>QR platba</h3>
     <div id="donateBank" hidden>
-      <p>Nebo naskenujte QR kód v bankovní aplikaci:</p>
+      <p>Naskenujte QR kód v bankovní aplikaci:</p>
       <div class="chips" id="donateAmt"></div>
       <div class="qr" id="donateQr"></div>
       <p>Účet: <span class="acct" id="donateAcct"></span><br>Zpráva pro příjemce: Pstruh</p>
@@ -672,17 +676,19 @@ const toggle=(id)=>{ const el=$(id), open=el.hidden; ["donatePanel","contactPane
 const hasStripe=!!CFG.stripe;
 if(CFG.iban||hasStripe){
   const iban=(CFG.iban||"").replace(/\s+/g,"").toUpperCase(); let amt=CFG.castky[1]||CFG.castky[0];
-  $("donateBtn").hidden=false; $("donateAcct").textContent=CFG.ucet||CFG.iban; $("donateBank").hidden=!iban;
+  $("donateCard").hidden=false; $("donateNote").hidden=false; $("donateBtn").hidden=!iban; $("donateAcct").textContent=CFG.ucet||CFG.iban; $("donateBank").hidden=!iban;
   const draw=async()=>{
     $("donateAmt").innerHTML=CFG.castky.map(a=>`<button class="chip" aria-pressed="${a===amt}" data-a="${a}">${a} Kč</button>`).join("");
     $("donateAmt").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{amt=+b.dataset.a;draw();});
-    $("donateCardRow").hidden=!hasStripe; if(hasStripe) $("donateCard").href=CFG.stripe;
     if(!iban) return;
     if(!window.qrcode) await new Promise((ok,ko)=>{const s=document.createElement("script");
       s.src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js";s.onload=ok;s.onerror=ko;document.head.appendChild(s);});
     const q=qrcode(0,"M"); q.addData(`SPD*1.0*ACC:${iban}*AM:${amt.toFixed(2)}*CC:CZK*MSG:PSTRUH`); q.make();
     $("donateQr").innerHTML=q.createSvgTag({cellSize:4,margin:2,scalable:true});
   };
+  if(hasStripe) $("donateCard").href=CFG.stripe;
+  else { $("donateCard").removeAttribute("target"); $("donateCard").lastChild.textContent="Přispět QR platbou";
+    $("donateCard").onclick=(e)=>{e.preventDefault();$("donateBtn").click();}; }
   $("donateBtn").onclick=()=>{ toggle("donatePanel"); if(!$("donatePanel").hidden) draw().catch(()=>{$("donateQr").textContent="QR kód se nepodařilo načíst.";}); };
 }
 if(CFG.kontakt && CFG.email){
